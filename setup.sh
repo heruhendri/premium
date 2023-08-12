@@ -103,7 +103,7 @@ apt install python -y >/dev/null 2>&1
 echo -e "[ ${BGreen}INFO${NC} ] Aight good ... installation file is ready"
 sleep 0.5
 echo -ne "[ ${BGreen}INFO${NC} ] Check permission : "
-url_izin='https://raw.githubusercontent.com/rizkyckj/izin/master/izin'
+url_izin='https://raw.githubusercontent.com/heruhendri/izin/master/izin'
 
 #IP VPS
 ip_vps=$(curl -sS ifconfig.me)
