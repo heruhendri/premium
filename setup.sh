@@ -192,7 +192,7 @@ echo -e "${tyblue}|           DOWNLOAD UPDATE MENU            |${NC}"
 echo -e "${tyblue}'------------------------------------------'${NC}"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/heruhendri/premium/master/update.sh && chmod +x update.sh && ./update.sh
+wget https://raw.githubusercontent.com/heruhendri/premium/master/updatemenu.sh && chmod +x updatemenu.sh && ./updatemenu.sh
 #Install UDP CUSTOM 
 echo -e "${tyblue}.------------------------------------------.${NC}"
 echo -e "${tyblue}|           DOWNLOAD UDP CUSTOM            |${NC}"
