@@ -85,31 +85,25 @@ export WARNING="${RED}\e[5m"
 export UNDERLINE="\e[4m"
 
 echo -e "${y}┌━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┐${NC}"
-echo -e "  \\E[40;1;37m[ SSH ] \E[0m"
+echo -e "  \\E[40;1;37m[ Xray/Vmess ] \E[0m"
 echo -e ""
-echo -e "  \\E[40;1;37m [1] Create SSH \E[0m"
-echo -e "  \\E[40;1;37m [2] Trial SSH  \E[0m"
-echo -e "  \\E[40;1;37m [3] Renew SSH \E[0m"
-echo -e "  \\E[40;1;37m [4] Delete SSH \E[0m"
-echo -e "  \\E[40;1;37m [5] Cek User SSH \E[0m"
-echo -e "  \\E[40;1;37m [6] List Member SSH \E[0m"
-echo -e "  \\E[40;1;37m [7] Delete User Expired \E[0m"
-echo -e "  \\E[40;1;37m [8] Autokill \E[0m"
-echo -e "  \\E[40;1;37m [9] User Multilogin \E[0m"
+echo -e "  \\E[40;1;37m [1] Create Xray/Vmess  \E[0m"
+echo -e "  \\E[40;1;37m [2] Trial Xray/Vmess  \E[0m"
+echo -e "  \\E[40;1;37m [3] Renew Xray/Vmess \E[0m"
+echo -e "  \\E[40;1;37m [4] Delete Xray/Vmess \E[0m"
+echo -e "  \\E[40;1;37m [5] Cek User Xray/Vmess \E[0m"
+echo -e "  \\E[40;1;37m [6] List Create Xray/Vmess \E[0m"
 echo -e "${y}└━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┘${NC}"
 echo -e ""
 read -p " Select menu :  "  opt
 echo -e ""
 case $opt in
-1) clear ; usernew ; exit ;;
-2) clear ; trial ; exit ;;
-3) clear ; renew ; exit ;;
-4) clear ; hapus ; exit ;;
-5) clear ; cek ; exit ;;
-6) clear ; member ; exit ;;
-7) clear ; delete ; exit ;;
-8) clear ; autokill ; exit ;;
-9) clear ; ceklim ; exit ;;
+1) clear ; add-ws ; exit ;;
+2) clear ; trialvmess ; exit ;;
+3) clear ; renew-ws ; exit ;;
+4) clear ; del-ws ; exit ;;
+5) clear ; cek-ws ; exit ;;
+6) clear ; cat /etc/log-create-vmess.log ; exit ;;
 0) clear ; menu ; exit ;;
 x) exit ;;
 *) echo "Anda salah tekan " ; sleep 1 ; m-sshovpn ;;
