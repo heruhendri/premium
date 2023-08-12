@@ -167,7 +167,7 @@ uram=$( free -m | awk 'NR==2 {print $3}' )
 fram=$( free -m | awk 'NR==2 {print $4}' )
 clear 
 echo -e "┌────────────────────────────────────────────────┐\033[0m${NC}"
-echo -e "${COLOR1}|\\E[40;1;37m      SCRIPT MULTIPORT BY HENDR STORE       \E[0m"
+echo -e "${COLOR1}|\\E[40;1;37m      SCRIPT MULTIPORT BY hendr.store       \E[0m"
 echo -e "${COLOR1}│────────────────────────────────────────────────┘\033[0m${NC}"
 echo -e "${COLOR1}│${NC} ☞ OS                  = "`hostnamectl | grep "Operating System" | cut -d ' ' -f5-`
 echo -e "${COLOR1}│${NC} ☞ TIME                = $( date -d "0 days" +"%d-%m-%Y | %X" )"
