@@ -98,16 +98,13 @@ echo -e ""
 read -p " Select menu :  "  opt
 echo -e ""
 case $opt in
-1) clear ; usernew ; exit ;;
-2) clear ; trial ; exit ;;
-3) clear ; renew ; exit ;;
-4) clear ; hapus ; exit ;;
-5) clear ; cek ; exit ;;
-6) clear ; member ; exit ;;
-7) clear ; delete ; exit ;;
-8) clear ; autokill ; exit ;;
-9) clear ; ceklim ; exit ;;
-0) clear ; menu ; exit ;;
+1) clear ; add-tr ;;
+2) clear ; trialtrojan ;;
+3) clear ; renew-tr ;;
+4) clear ; del-tr ;;
+5) clear ; cek-tr ;;
+6) clear ; cat /etc/log-create-trojan.log ; exit ;;
+0) clear ; menu ;;
 x) exit ;;
-*) echo "Anda salah tekan " ; sleep 1 ; m-sshovpn ;;
+*) echo "Anda Salah Tekan" ; sleep 1 ; m-trojan ;;
 esac
