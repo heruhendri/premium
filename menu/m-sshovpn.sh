@@ -96,6 +96,7 @@ echo -e "  \\E[40;1;37m [6] List Member SSH \E[0m"
 echo -e "  \\E[40;1;37m [7] Delete User Expired \E[0m"
 echo -e "  \\E[40;1;37m [8] Autokill \E[0m"
 echo -e "  \\E[40;1;37m [9] User Multilogin \E[0m"
+echo -e "  \\E[40;1;37m [10] Banner \E[0m"
 echo -e "${y}└━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┘${NC}"
 echo -e ""
 read -p " Select menu :  "  opt
@@ -110,6 +111,7 @@ case $opt in
 7) clear ; delete ; exit ;;
 8) clear ; autokill ; exit ;;
 9) clear ; ceklim ; exit ;;
+10) clear ; nano /etc/issue.net ; exit ;;
 0) clear ; menu ; exit ;;
 x) exit ;;
 *) echo "Anda salah tekan " ; sleep 1 ; m-sshovpn ;;
