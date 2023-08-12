@@ -83,22 +83,26 @@ export BOLD="\e[1m"
 export WARNING="${RED}\e[5m"
 export UNDERLINE="\e[4m"
 
-echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"   
-echo -e "  ${WH}[${COLOR1}01${WH}]${NC} ${y}• ${WH}SPEEDTEST" 
-echo -e "  ${WH}[${COLOR1}02${WH}]${NC} ${Lred}• ${WH}REBOOT"     
-echo -e "  ${WH}[${COLOR1}03${WH}]${NC} ${y}• ${WH}BANNER"   
-echo -e "  ${WH}[${COLOR1}04${WH}]${NC} ${Lred}• ${WH}UPDATE"  
+echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
+echo -e "$COLOR1 ${NC} ${COLBG1}             ${WH}• WEB PANEL MENU •             ${NC} $COLOR1 $NC"
+echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
+echo -e " $COLOR1┌───────────────────────────────────────────────┐${NC}"
+echo -e " $COLOR1 $NC   ${WH}[${COLOR1}00${WH}]${NC} ${COLOR1}• ${WH} SPEEDTEST  ${NC}                              $COLOR1 $NC"
+echo -e " $COLOR1 $NC   ${WH}[${COLOR1}00${WH}]${NC} ${COLOR1}• ${WH} RESTART ${NC}                              $COLOR1 $NC"
+echo -e " $COLOR1 $NC   ${WH}[${COLOR1}00${WH}]${NC} ${COLOR1}• ${WH} BANNER ${NC}                               $COLOR1 $NC"
+echo -e " $COLOR1 $NC                                               $COLOR1 $NC"
+echo -e " $COLOR1 $NC   ${WH}[${COLOR1}00${WH}]${NC} ${COLOR1}• ${WH}GO BACK${NC}                              $COLOR1 $NC"
+echo -e " $COLOR1└───────────────────────────────────────────────┘${NC}"
+echo -e "$COLOR1┌────────────────────── ${WH}BY${NC} ${COLOR1}───────────────────────┐${NC}"
+echo -e "$COLOR1 ${NC}                 ${WH}• RVPN STORES •${NC}                 $COLOR1 $NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo -e ""
 read -p " Select menu :  "  opt
 echo -e ""
 case $opt in
 1) clear ; speedtest ; exit ;;
-3) clear ; auto-reboot ; exit ;;
-4) clear ; restart ; exit ;;
-5) clear ; bw ; exit ;;
-7) clear ; updatemenu; exit ;;
-8) clear ; nano /etc/issue.net ; exit ;;
+2) clear ; restart ; exit ;;
+3) clear ; nano /etc/issue.net ; exit ;;
 0) clear ; menu ;; 
 x) exit ;;
 *) echo -e "" ; echo "Anda salah tekan" ; sleep 1 ; m-system ;;
