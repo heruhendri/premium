@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "Checking VPS"
 #link izin ip vps
-url_izin='https://raw.githubusercontent.com/rizkyckj/izin/master/izin'
+url_izin='https://raw.githubusercontent.com/heruhendri/izin/master/izin'
 
 #IP VPS
 ip_vps=$(curl -sS ifconfig.me)
