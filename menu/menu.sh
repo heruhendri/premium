@@ -179,7 +179,7 @@ echo -e "${COLOR1}└───────────────────�
 echo -e "${COLOR1}SSH ${NC}: $ressh"" ${COLOR1} NGINX ${NC}: $resngx"" ${COLOR1}  XRAY ${NC}: $resv2r"" ${COLOR1} TROJAN ${NC}: $resv2r"
 echo -e "${COLOR1}    STUNNEL ${NC}: $ressh" "${COLOR1} DROPBEAR ${NC}: $resdbr" "${COLOR1} UDP-CUSTOM ${NC}: $resv2r"    
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"   
-echo -e "  ${WH}[${COLOR1}02${WH}]${NC} ${y}• ${WH}SSHWS   ${WH}[${COLOR1}${ssh1}${WH}]    ${WH}[${COLOR1}07${WH}]${NC} ${Lred}• ${WH}MARZBAN ${WH}[${COLOR1}Menu${WH}]  $COLOR1 $NC"
+echo -e "  ${WH}[${COLOR1}01${WH}]${NC} ${y}• ${WH}SSHWS   ${WH}[${COLOR1}${ssh1}${WH}]    ${WH}[${COLOR1}07${WH}]${NC} ${Lred}• ${WH}MARZBAN ${WH}[${COLOR1}Menu${WH}]  $COLOR1 $NC"
 echo -e "  ${WH}[${COLOR1}02${WH}]${NC} ${y}• ${WH}VMESS   ${WH}[${COLOR1}${vmc}${WH}]    ${WH}[${COLOR1}08${WH}]${NC} ${Lred}• ${WH}UPDATE  ${WH}[${COLOR1}Menu${WH}]  $COLOR1 $NC"  
 echo -e "  ${WH}[${COLOR1}03${WH}]${NC} ${y}• ${WH}VLESS   ${WH}[${COLOR1}${vlx}${WH}]    ${WH}[${COLOR1}09${WH}]${NC} ${Lred}• ${WH}ADD HOST/DOMAIN  $COLOR1 $NC"  
 echo -e "  ${WH}[${COLOR1}04${WH}]${NC} ${y}• ${WH}TROJAN  ${WH}[${COLOR1}${trx}${WH}]    ${WH}[${COLOR1}10${WH}]${NC} ${Lred}• ${WH}RENEW CERT       $COLOR1 $NC"  
