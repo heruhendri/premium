@@ -305,10 +305,7 @@ wget -O renew "https://raw.githubusercontent.com/heruhendri/premium/master/ssh/r
 wget -O hapus "https://raw.githubusercontent.com/heruhendri/premium/master/ssh/hapus.sh"
 wget -O cek "https://raw.githubusercontent.com/heruhendri/premium/master/ssh/cek.sh"
 wget -O member "https://raw.githubusercontent.com/heruhendri/premium/master/ssh/member.sh"
-wget -O delete "https://raw.githubusercontent.com/heruhendri/premium/master/ssh/delete.sh"
-wget -O autokill "https://raw.githubusercontent.com/heruhendri/premium/master/ssh/autokill.sh"
 wget -O ceklim "https://raw.githubusercontent.com/heruhendri/premium/master/ssh/ceklim.sh"
-wget -O tendang "https://raw.githubusercontent.com/heruhendri/premium/master/ssh/tendang.sh"
 wget -O sshws "https://raw.githubusercontent.com/heruhendri/premium/master/ssh/sshws.sh"
 
 # menu system
