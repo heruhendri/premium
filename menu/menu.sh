@@ -177,6 +177,7 @@ echo -e "${COLOR1}│${NC} ☞ ISP SERVER          = $(wget -qO- ipinfo.io/org )
 echo -e "${COLOR1}│${NC} ☞ RAM                 = $uram MB / $tram MB"
 echo -e "${COLOR1}└────────────────────────────────────────────────\033[0m${NC}"
 echo -e "$COLOR1┌─────────────────┐${NC}" 
+echo -e "$COLOR1 nama "
 echo -e "${COLOR1} ${NC} masa aktif = "
 echo -e "$COLOR1└─────────────────┘${NC}"
 echo -e "${COLOR1}SSH ${NC}: $ressh"" ${COLOR1} NGINX ${NC}: $resngx"" ${COLOR1}  XRAY ${NC}: $resv2r"" ${COLOR1} TROJAN ${NC}: $resv2r"
