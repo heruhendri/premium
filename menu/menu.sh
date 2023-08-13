@@ -184,7 +184,7 @@ echo -e "  ${WH}[${COLOR1}02${WH}]${NC} ${y}• ${WH}VMESS   ${WH}[${COLOR1}${vm
 echo -e "  ${WH}[${COLOR1}03${WH}]${NC} ${y}• ${WH}VLESS   ${WH}[${COLOR1}${vlx}${WH}]    ${WH}[${COLOR1}09${WH}]${NC} ${Lred}• ${WH}ADD HOST/DOMAIN  $COLOR1 $NC"  
 echo -e "  ${WH}[${COLOR1}04${WH}]${NC} ${y}• ${WH}TROJAN  ${WH}[${COLOR1}${trx}${WH}]    ${WH}[${COLOR1}10${WH}]${NC} ${Lred}• ${WH}RENEW CERT       $COLOR1 $NC"  
 echo -e "  ${WH}[${COLOR1}05${WH}]${NC} ${y}• ${WH}SS WS   ${WH}[${COLOR1}$ssx${WH}]    ${WH}[${COLOR1}11${WH}]${NC} ${Lred}• ${WH}MONITOR ${WH}[${COLOR1}Menu${WH}]  $COLOR1 $NC"
-echo -e "  ${WH}[${COLOR1}06${WH}]${NC} ${y}• ${WH}BACKUP  	${WH}[${COLOR1}12${WH}]${Lred}• ${WH}INFO ${WH}[${COLOR1}Menu${WH}]  $COLOR1 $NC"
+echo -e "  ${WH}[${COLOR1}06${WH}]${NC} ${y}• ${WH}BACKUP  	${WH}[${COLOR1}12${WH}] ${Lred}• ${WH}INFO ${WH}[${COLOR1}Menu${WH}]  $COLOR1 $NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo -e ""
 read -p " Select From Options [1-12 or x ] :  "  opt
