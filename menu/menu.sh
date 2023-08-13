@@ -177,7 +177,7 @@ echo -e "${COLOR1}│${NC} ☞ ISP SERVER          = $(wget -qO- ipinfo.io/org )
 echo -e "${COLOR1}│${NC} ☞ RAM                 = $uram MB / $tram MB"
 echo -e "${COLOR1}└────────────────────────────────────────────────\033[0m${NC}"
 echo -e			"$COLOR1┌─────────────────┐${NC}" 
-echo -e 		"${COLOR1} ${NC} version
+echo -e 		"${COLOR1} ${NC} version "
 echo -e 		"${COLOR1} ${NC} nama= "
 echo -e			"${COLOR1} ${NC} exp script = "
 echo -e			"$COLOR1└─────────────────┘${NC}"
