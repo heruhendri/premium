@@ -342,9 +342,6 @@ chmod +x renew
 chmod +x hapus
 chmod +x cek
 chmod +x member
-chmod +x delete
-chmod +x autokill
-chmod +x ceklim
 chmod +x tendang
 chmod +x sshws
 
