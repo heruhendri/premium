@@ -147,8 +147,8 @@ echo "IP=" >> /var/lib/ipvps.conf
 echo ""
 clear
 echo -e "${YELLOW}-----------------------------------------------------${NC}"
-echo -e "Anda Ingin Menggunakan Domain Otomatis ?"
-echo -e "Atau Ingin Menggunakan Domain Pribadi ?"
+echo -e "1.Anda Ingin Menggunakan Domain Otomatis ?"
+echo -e "2.Atau Ingin Menggunakan Domain Pribadi ?"
 echo -e "Jika Ingin Menggunakan Domain otomatis, Ketik ${GREEN}1${NC}"
 echo -e "dan Jika Ingin menggunakan Domain Pribadi, Ketik ${GREEN}2${NC}"
 echo -e "${YELLOW}-----------------------------------------------------${NC}"
