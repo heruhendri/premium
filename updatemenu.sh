@@ -1,6 +1,6 @@
 #!/bin/bash
 cd /usr/bin
-wget -O menu "https://raw.githubusercontent.com/rizkyckj/rvpnstores/master/menu/menu.sh"
+wget -O menu "https://raw.githubusercontent.com/heruhendri/premium/master/menu/menu.sh"
 wget # menu
 wget -O menu "https://raw.githubusercontent.com/heruhendri/premium/master/menu/menu.sh"
 wget -O m-vmess "https://raw.githubusercontent.com/heruhendri/premium/master/menu/m-vmess.sh"
