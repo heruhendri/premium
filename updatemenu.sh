@@ -17,7 +17,7 @@ wget -O trial "https://raw.githubusercontent.com/heruhendri/premium/master/ssh/t
 wget -O renew "https://raw.githubusercontent.com/heruhendri/premium/master/ssh/renew.sh"
 wget -O hapus "https://raw.githubusercontent.com/heruhendri/premium/master/ssh/hapus.sh"
 wget -O cek "https://raw.githubusercontent.com/heruhendri/premium/master/ssh/cek.sh"
-wget -O member "https://raw.githubusercontent.com/heruhendri/premium/master/ssh/member.sh"
+wget -O member "https://github.com/heruhendri/premium/blob/master/ssh/member.sh"
 wget -O delete "https://raw.githubusercontent.com/heruhendri/premium/master/ssh/delete.sh"
 wget -O autokill "https://raw.githubusercontent.com/heruhendri/premium/master/ssh/autokill.sh"
 wget -O ceklim "https://raw.githubusercontent.com/heruhendri/premium/master/ssh/ceklim.sh"
