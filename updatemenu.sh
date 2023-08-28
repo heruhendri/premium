@@ -21,7 +21,7 @@ wget -O member "https://github.com/heruhendri/premium/blob/master/ssh/member.sh"
 wget -O delete "https://raw.githubusercontent.com/heruhendri/premium/master/ssh/delete.sh"
 wget -O autokill "https://raw.githubusercontent.com/heruhendri/premium/master/ssh/autokill.sh"
 wget -O ceklim "https://raw.githubusercontent.com/heruhendri/premium/master/ssh/ceklim.sh"
-wget -O tendang "https://github.com/heruhendri/premium/blob/master/ssh/tendang.sh"
+wget -O tendang "https://github.com/heruhendri/premium/raw/master/ssh/tendang.sh"
 wget -O sshws "https://raw.githubusercontent.com/heruhendri/premium/master/ssh/sshws.sh"
 
 # menu system
