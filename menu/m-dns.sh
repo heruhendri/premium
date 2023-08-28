@@ -54,7 +54,7 @@ echo -e " $COLOR1 $NC                                               $COLOR1 $NC"
 echo -e " $COLOR1 $NC   ${WH}[${COLOR1}00${WH}]${NC} ${COLOR1}• ${WH}GO BACK${NC}                              $COLOR1 $NC"
 echo -e " $COLOR1└───────────────────────────────────────────────┘${NC}"
 echo -e "$COLOR1┌────────────────────── ${WH}BY${NC} ${COLOR1}───────────────────────┐${NC}"
-echo -e "$COLOR1 ${NC}                 ${WH}• HENDR STORE •${NC}                 $COLOR1 $NC"
+echo -e "$COLOR1 ${NC}                 ${WH}• hendr.store •${NC}                 $COLOR1 $NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo -e ""
 echo -ne " ${WH}Select menu ${COLOR1}: ${WH}"; read opt
@@ -64,7 +64,7 @@ case $opt in
 03 | 3) clear ; restore ;;
 04 | 4) clear ; backup_setting ;;
 05 | 5) clear ; infos ;;
-06 | 6) clear ; wget https://raw.githubusercontent.com/rizkyckj/rvpnstores/master/backup/dependencies.sh ;;
+06 | 6) clear ; wget https://raw.githubusercontent.com/heruhendri/premium/master/backup/dependencies.sh ;;
 00 | 0) clear ; menu ;;
 *) clear ; menu-backup ;;
 esac
