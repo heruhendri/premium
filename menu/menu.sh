@@ -28,7 +28,7 @@ if [[ -n "$izin" ]]; then
 
   # Memeriksa apakah IP VPS ditemukan dalam izin.txt
   if [[ "$ipvps" != "$ip_vps" ]]; then
-echo "acces denied 🔧 "
+echo "acces denied 🔧 sc expired"
     exit 0
   fi
 else
