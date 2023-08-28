@@ -42,7 +42,7 @@ sed -i '/#vmessgrpc$/a\### '"$user $exp"'\
 },{"id": "'""$uuid""'","alterId": '"0"',"email": "'""$user""'"' /etc/xray/config.json
 asj=`cat<<EOF
       {
-      "v": "1",
+      "v": "2",
       "ps": "${user}",
       "add": "${domain}",
       "port": "443",
@@ -57,7 +57,7 @@ asj=`cat<<EOF
 EOF`
 ask=`cat<<EOF
       {
-      "v": "1",
+      "v": "2",
       "ps": "${user}",
       "add": "${domain}",
       "port": "80",
@@ -72,7 +72,7 @@ ask=`cat<<EOF
 EOF`
 grpc=`cat<<EOF
       {
-      "v": "1",
+      "v": "2",
       "ps": "${user}",
       "add": "${domain}",
       "port": "443",
