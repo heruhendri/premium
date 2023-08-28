@@ -50,7 +50,7 @@ echo -e "⟨ Xray/Trojan Account ⟩" | tee -a /etc/log-create-trojan.log
 echo -e "◇━━━━━━━━━━━━━◇" | tee -a /etc/log-create-trojan.log
 echo -e "Remarks        : ${user}" | tee -a /etc/log-create-trojan.log
 echo -e "Host/IP        : ${domain}" | tee -a /etc/log-create-trojan.log
-echo -e "Wildcard       : (bug.com).${domain}" | tee -a /etc/log-create-trojan.log
+echo -e "Wildcard       : ${domain}" | tee -a /etc/log-create-trojan.log
 echo -e "Port TLS       : ${tls}" | tee -a /etc/log-create-trojan.log
 echo -e "Port none TLS  : ${ntls}" | tee -a /etc/log-create-trojan.log
 echo -e "Port gRPC      : ${tls}" | tee -a /etc/log-create-trojan.log
