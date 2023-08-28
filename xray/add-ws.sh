@@ -42,7 +42,7 @@ sed -i '/#vmessgrpc$/a\### '"$user $exp"'\
 },{"id": "'""$uuid""'","alterId": '"0"',"email": "'""$user""'"' /etc/xray/config.json
 asj=`cat<<EOF
       {
-      "v": "2",
+      "v": "1",
       "ps": "${user}",
       "add": "${domain}",
       "port": "443",
@@ -57,7 +57,7 @@ asj=`cat<<EOF
 EOF`
 ask=`cat<<EOF
       {
-      "v": "2",
+      "v": "1",
       "ps": "${user}",
       "add": "${domain}",
       "port": "80",
@@ -72,7 +72,7 @@ ask=`cat<<EOF
 EOF`
 grpc=`cat<<EOF
       {
-      "v": "2",
+      "v": "1",
       "ps": "${user}",
       "add": "${domain}",
       "port": "443",
@@ -91,8 +91,8 @@ vmess_base643=$( base64 -w 0 <<< $vmess_json3)
 vmesslink1="vmess://$(echo $asj | base64 -w 0)"
 vmesslink2="vmess://$(echo $ask | base64 -w 0)"
 vmesslink3="vmess://$(echo $grpc | base64 -w 0)"
-systemctl restart xray > /dev/null 2>&1
-service cron restart > /dev/null 2>&1
+systemctl restart xray > /dev/null 1>&1
+service cron restart > /dev/null 1>&1
 clear
 echo -e "◇━━━━━━━━━━━━━◇" | tee -a /etc/log-create-vmess.log
 echo -e "⟨ Xray/Vmess Account ⟩" | tee -a /etc/log-create-vmess.log
