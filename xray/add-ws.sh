@@ -99,7 +99,7 @@ echo -e "⟨ Xray/Vmess Account ⟩" | tee -a /etc/log-create-vmess.log
 echo -e "◇━━━━━━━━━━━━━◇" | tee -a /etc/log-create-vmess.log
 echo -e "Remarks        : ${user}" | tee -a /etc/log-create-vmess.log
 echo -e "Domain         : ${domain}" | tee -a /etc/log-create-vmess.log
-echo -e "Wildcard       : (bug.com).${domain}" | tee -a /etc/log-create-vmess.log
+echo -e "Wildcard       : ${domain}" | tee -a /etc/log-create-vmess.log
 echo -e "Port TLS       : ${tls}" | tee -a /etc/log-create-vmess.log
 echo -e "Port none TLS  : ${none}" | tee -a /etc/log-create-vmess.log
 echo -e "Port gRPC      : ${tls}" | tee -a /etc/log-create-vmess.log
