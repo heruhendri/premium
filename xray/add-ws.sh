@@ -1,3 +1,4 @@
+@@ -0,0 +1,124 @@
 #!/bin/bash
 MYIP=$(wget -qO- ipv4.icanhazip.com);
 echo "Checking VPS"
@@ -51,7 +52,7 @@ asu=`cat<<EOF
       "net": "ws",
       "path": "/vmess",
       "type": "none",
-      "host": "${domain}",
+      "host": "",
       "tls": "tls"
 }
 EOF`
@@ -66,7 +67,7 @@ ask=`cat<<EOF
       "net": "ws",
       "path": "/vmess",
       "type": "none",
-      "host": "${domain}",
+      "host": "",
       "tls": "none"
 }
 EOF`
@@ -81,7 +82,7 @@ grpc=`cat<<EOF
       "net": "grpc",
       "path": "vmess-grpc",
       "type": "none",
-      "host": "${domain}",
+      "host": "",
       "tls": "tls"
 }
 EOF`
@@ -99,7 +100,7 @@ echo -e "⟨ Xray/Vmess Account ⟩" | tee -a /etc/log-create-vmess.log
 echo -e "◇━━━━━━━━━━━━━◇" | tee -a /etc/log-create-vmess.log
 echo -e "Remarks        : ${user}" | tee -a /etc/log-create-vmess.log
 echo -e "Domain         : ${domain}" | tee -a /etc/log-create-vmess.log
-echo -e "Wildcard       : ${domain}" | tee -a /etc/log-create-vmess.log
+echo -e "Wildcard       : (bug.com).${domain}" | tee -a /etc/log-create-vmess.log
 echo -e "Port TLS       : ${tls}" | tee -a /etc/log-create-vmess.log
 echo -e "Port none TLS  : ${none}" | tee -a /etc/log-create-vmess.log
 echo -e "Port gRPC      : ${tls}" | tee -a /etc/log-create-vmess.log
@@ -120,5 +121,4 @@ echo -e "Expired On     : $exp" | tee -a /etc/log-create-vmess.log
 echo -e "◇━━━━━━━━━━━━━◇" | tee -a /etc/log-create-vmess.log
 echo "" | tee -a /etc/log-create-vmess.log
 read -n 1 -s -r -p "Press any key to back on menu"
-
 m-vmess
