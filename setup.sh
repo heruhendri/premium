@@ -1,5 +1,9 @@
 #!/bin/bash
-clear
+dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
+biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
+#########################
+CDNF="https://raw.githubusercontent.com/heruhendri/premium/master"
+clear 
 red='\e[1;31m'
 green='\e[0;32m'
 yell='\e[1;33m'
@@ -146,30 +150,37 @@ echo "IP=" >> /var/lib/ipvps.conf
 
 echo ""
 clear
-echo -e "${YELLOW}-----------------------------------------------------${NC}"
-echo -e "1.Anda Ingin Menggunakan Domain Otomatis ?"
-echo -e "2.Atau Ingin Menggunakan Domain Pribadi ?"
-echo -e "Jika Ingin Menggunakan Domain otomatis, Ketik ${GREEN}1${NC}"
-echo -e "dan Jika Ingin menggunakan Domain Pribadi, Ketik ${GREEN}2${NC}"
-echo -e "${YELLOW}-----------------------------------------------------${NC}"
+echo -e "$BBlue                     SETUP DOMAIN VPS     $NC"
+echo -e "$BYellow----------------------------------------------------------$NC"
+echo -e "$BGreen 1. Use Domain Random / Gunakan Domain Random $NC"
+echo -e "$BGreen 2. Choose Your Own Domain / Gunakan Domain Sendiri $NC"
+echo -e "$BYellow----------------------------------------------------------$NC"
 read -rp " input 1 or 2 / pilih 1 atau 2 : " dns
-if test $dns -eq 1; then
-wget https://raw.githubusercontent.com/givpn/AutoScriptXray/master/ssh/cf && chmod +x cf && ./cf
-elif test $dns -eq 2; then
-read -rp "Enter Your Domain / masukan domain : " dom
-echo "IP=$dom" > /var/lib/ipvps.conf
-echo "$dom" > /root/scdomain
-echo "$dom" > /etc/xray/scdomain
-echo "$dom" > /etc/xray/domain
-echo "$dom" > /etc/v2ray/domain
-echo "$dom" > /root/domain
-else 
-echo "Not Found Argument"
-exit 1
-fi
-echo -e "${BGreen}Done!${NC}"
-sleep 2
-clear
+	if test $dns -eq 1; then
+    clear
+    apt install jq curl -y
+    wget -q -O /root/cf "${CDNF}/cf" >/dev/null 2>&1
+    chmod +x /root/cf
+    bash /root/cf | tee /root/install.log
+    print_success "Domain Random Done"
+	elif test $dns -eq 2; then
+    read -rp "Enter Your Domain / masukan domain : " dom
+    read -rp "Input ur ns-domain : " -e nsdomen
+    echo "IP=$dom" > /var/lib/ipvps.conf
+    echo "$dom" > /root/scdomain
+	echo "$dom" > /etc/xray/scdomain
+	echo "$dom" > /etc/xray/domain
+	echo "$dom" > /etc/v2ray/domain
+	echo "$dom" > /root/domain
+        echo "$nsdomen" > /etc/xray/nsdomain
+        echo "$nsdomen" > /root/nsdomain
+    else 
+    echo "Not Found Argument"
+    exit 1
+    fi
+    echo -e "${BGreen}Done!${NC}"
+    sleep 2
+    clear
     
 #INSTALL SSH
 echo -e "${tyblue}.------------------------------------------.${NC}"
