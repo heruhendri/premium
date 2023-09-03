@@ -46,6 +46,7 @@ wget -O trialvmess "https://raw.githubusercontent.com/heruhendri/premium/master/
 wget -O renew-ws "https://raw.githubusercontent.com/heruhendri/premium/master/xray/renew-ws.sh" 
 wget -O del-ws "https://raw.githubusercontent.com/heruhendri/premium/master/xray/del-ws.sh" 
 wget -O cek-ws "https://raw.githubusercontent.com/heruhendri/premium/master/xray/cek-ws.sh" 
+wget -O member-vm "https://raw.githubusercontent.com/heruhendri/premium/master/xray/member-vm.sh" 
 
 # vless
 wget -O add-vless "https://raw.githubusercontent.com/heruhendri/premium/master/xray/add-vless.sh" 
