@@ -69,4 +69,4 @@ echo -e "◇━━━━━━━━━━━━━◇" | tee -a /etc/log-create
 echo "" | tee -a /etc/log-create-trojan.log
 read -n 1 -s -r -p "Press any key to back on menu"
 m-trojan
-fi
+
