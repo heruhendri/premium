@@ -38,7 +38,7 @@ fi
 
 vlx=$(grep -c -E "^#& " "/etc/xray/config.json")
 let vla=$vlx/2
-vmc=$(grep -E "^#! " "/etc/xray/config.json" | cut -d ' ' -f 2-3 | column -t | sort | uniq | nl )
+vmc=$(grep -E "^#! " "/etc/xray/config.json")
 let vma=$vmc/2
 ssh1="$(awk -F: '$3 >= 1000 && $1 != "nobody" {print $1}' /etc/passwd | wc -l)"
 
