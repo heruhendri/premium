@@ -1,7 +1,4 @@
-#!/bin/bash
-MYIP=$(wget -qO- ipv4.icanhazip.com);
-echo "Checking VPS"
-          clear  
+ 
           echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"  
           echo -e "$COLOR1│${NC} ${COLBG1}           • MEMBER VMESS •              ${NC} $COLOR1│$NC"  
           echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"  
