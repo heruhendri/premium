@@ -25,8 +25,8 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/etc/xray/config.json")
  	if [ -z $user ]; then
   	m-vmess
 	else
-exp=$(grep -wE "^#! $user" "/etc/xray/config.json" | cut -d ' ' -f 3 | sort | uniq)
-sed -i "/^#! $user $exp/,/^},{/d" /etc/xray/config.json
+exp=$(grep -wE "^###! $user" "/etc/xray/config.json" | cut -d ' ' -f 3 | sort | uniq)
+sed -i "/^###! $user $exp/,/^},{/d" /etc/xray/config.json
 systemctl restart xray > /dev/null 2>&1
 clear
 systemctl restart xray.service
