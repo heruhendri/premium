@@ -24,7 +24,7 @@ echo -e "$COLOR1└────────────────────�
 echo -e ""
 echo -ne " ${WH}Select menu ${COLOR1}: ${WH}"; read opt
 case $opt in
-01 | 1) clear ; apt update && apt install wget -y && wget https://raw.githubusercontent.com/rizkyckj/xolpanel/master/xolpanel.sh && chmod +x xolpanel.sh && ./xolpanel.sh ;;
+01 | 1) clear ; apt update && apt install wget -y && wget https://raw.githubusercontent.com/heruhendri/xolpanel/main/xolpanel.sh && chmod +x xolpanel.sh && ./xolpanel.sh ;;
 02 | 2) clear ; wget https://raw.githubusercontent.com/Agunxzzz/MarXray/main/sslmar.sh && chmod 755 sslmar.sh && ./sslmar.sh ;;
 03 | 3) clear ; m-system ;;
 0 | 0) clear ; menu ;;
