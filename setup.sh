@@ -210,7 +210,7 @@ echo -e "${tyblue}|           DOWNLOAD UDP CUSTOM            |${NC}"
 echo -e "${tyblue}'------------------------------------------'${NC}"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/rizkyckj/rvpnstores/master/udp.sh && chmod +x udp.sh && ./udp.sh
+wget https://raw.githubusercontent.com/heruhendri/premium/master/udp.sh && chmod +x udp.sh && ./udp.sh
 clear
 cat> /root/.profile << END
 # ~/.profile: executed by Bourne-compatible login shells.
